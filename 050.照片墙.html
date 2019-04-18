@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father{
+			height: 500px;
+			background-color: skyblue;
+			margin: 50px auto;
+			padding: 200px auto;
+		}
+		img{
+			width: 300px;
+			height:400px;
+			float: left;
+			margin-left: 60px;
+			margin-top: 50px;
+
+		}
+		li{
+			list-style: none;
+			display: inline-block;
+			position: relative;
+			transition: all,1s;
+		}
+	li:nth-child(1){
+			transform: rotateZ(20deg)translate(50px);
+		}
+		li:nth-child(2){
+			transform: rotateZ(30deg)translate(50px);
+		}li:nth-child(3){
+			transform: rotateZ(10deg)translate(50px);
+		}li:nth-child(4){
+			transform: rotateZ(50deg)translate(50px);
+		}li:nth-child(5){
+			transform: rotateZ(50deg)translate(50px);
+		}
+		ul:hover li{
+			opacity: 0.5;
+		}
+		.son:hover{
+			transform: rotate(0) scale(1.3);
+			z-index: 100;
+			opacity: 1;
+		}
+	</style>
+
+
+	
+</head>
+<body>
+	<ul class="father">
+		<li class="son 1img" ><img src="../test/timg (1).jpg" alt=""></li>
+		<li class="son 2img" ><img src="../test/timg (2).jpg" alt=""></li>
+		<li class="son 3img" ><img src="../test/timg (3).jpg" alt=""></li>
+		<li class="son 4img" ><img src="../test/timg (4).jpg" alt=""></li>
+		<li class="son 5img" ><img src="../test/timg.jpg" alt=""></li>
+		
+	</ul>
+	
+</body>
+</html>

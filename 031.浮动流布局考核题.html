@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>031.浮动流布局考核题.html</title>
+	<style>
+		.clearfix:after{
+			
+		}
+		.father{
+			width: 800px;
+			height: 800px;
+			border: 0px solid red;
+			margin: 50px auto;
+		}
+		.son1{width:100px;
+			height: 100px;
+			background-color: red;
+
+		}
+		.son2{
+			float: right;
+			width: 200px;
+			height: 50px;
+			background-color: gray;
+		}
+		.son3{
+			float: right;
+			width: 600px;
+			height: 50px;
+			background-color: purple;
+			margin-top: -50px;
+		}
+		.father1{
+			width: 645px;
+			height: 565px;
+		}
+		.du1{
+			width: 500px;
+			height: 300px;
+			background-color: yellow;
+			margin:5px 0px;
+		}
+		.du2{
+			width: 500px;
+			height: 200px;
+			background-color: yellow;
+
+		}
+		.du3{
+			float: right;
+			width: 140px;
+			height:505px;
+			background-color: pink;
+		}
+		.du4{
+			height: 50px;
+			background-color: red;
+			margin-top: 5px;
+		}
+		.father2{
+			float: right;
+			width: 140px;
+			height: 560px;
+			background-color: skyblue;
+			margin-top: 5px;
+
+		}
+		.father3{
+			width:800px;
+			height: 95px;
+			background-color: blue;
+			margin-top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son2"></div>
+		<div class="son1"></div>
+		<div class="son3"></div>
+	<div class="father2"></div>
+	<div class="father1">
+		<div class="du3"></div>
+		<div class="du1"></div>
+		<div class="du2"></div>
+		
+		<div class="du4"></div>
+		<div class="father3"></div>
+	</div>
+
+
+	</div>
+</body>
+	
+</html>

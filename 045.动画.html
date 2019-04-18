@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father{
+			width: 100px;
+			height:100px;
+			background-color: blue;
+			animation-name:spot; /*动画名称*/
+			animation-duration: 1s; /*动画时间*/
+			/*animation:sport 2s linear 1s infinite alternate ;*/
+			animation-delay: 1s;/*动画延迟*/
+			animation-iteration-count: infinite;/*循环次数*/
+			animation-direction: alternate;/*执行往返*/
+
+		}
+		@keyframes spot{
+			from{width: 100px;
+				height: 100px;
+
+			}
+			to{width: 600px;
+				height: 600px;
+
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="father"></div>
+	
+</body>
+</html>

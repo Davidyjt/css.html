@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>020.盒模型背景处理考核题.html</title>
+	<style>
+		.father{
+			width: 250px;
+			height: 500px;
+			border: 1px solid black;
+			margin: 50px auto;
+			box-sizing: border-box;
+		}
+		.son1{
+			width:250px;
+			height:250px;
+			border: 0 solid black;
+			line-height: 250px;
+			text-align: center;
+			background-image: url(../test/b/t2.jpg);
+			background-size: 200px 200px;
+			background-repeat: no-repeat;
+			color:red;
+			background-position: center center;
+			
+		}
+		.son2{
+			width:250px;
+			height: 250px;
+			line-height: 250px;
+			border: 0px solid black;
+			color:red;
+			text-align: center;
+			background-image: url(../test/5.jpg);
+			background-size: 200px 200px;
+			background-repeat: no-repeat;
+			background-position: 25px 25px;
+			
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son1">我是小盒子</div>
+		<div class="son2">我是小盒子</div>
+	</div>
+</body>
+</html>

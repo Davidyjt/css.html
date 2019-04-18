@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>001.表单</title>
+</head>
+<body>
+	<form action="http://www.kuazhu.com" method="get">
+		<p>
+			<label for="user">
+				用户名：
+			</label>
+			<input type="text" name="user" placeholder="昵称" id="user">
+		</p>
+
+
+		<p>
+			<label for="mi">
+				密码：
+			</label>
+			<input type="password" name="mi" placeholder="123" id="mi">
+		</p>
+
+
+		<p>
+			性别：男<input type="radio" name="male" value="man" checked>
+			女<input type="radio" name="male" value="woman">
+			保密<input type="radio" name="male" value="no">
+		</p>
+
+		<p>
+			爱好：篮球<input type="checkbox" name="basketball" value="basketball" checked>
+			足球<input type="checkbox" name="football" value="football">
+		</p>
+
+		<p>
+			地址：<select name="city">
+				<optgroup label="直辖市" >
+				<option value="bj">北京</option>
+				<option value="sh">上海</option>
+				<option value="gz">广州</option>
+					
+				</optgroup>
+				<optgroup label="省级">
+					<option value="">河南</option>
+					<option value="">山东</option>
+					<option value="">湖南</option>
+					<option value="">山西</option>
+				</optgroup>
+			</select>
+			<select name="cit" >
+				<optgroup label="市级">
+					<option value="">焦作</option>
+					
+				</optgroup>
+			</select>
+		</p>
+		<p>
+			<input type="reset" value="删除">
+			<input type="submit" value="提交">
+		</p>
+	</form>
+	
+</body>
+</html>

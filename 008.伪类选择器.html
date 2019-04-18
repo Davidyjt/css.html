@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>008.伪类选择器.html</title>
+	<style>
+		a:link{color:red;}
+		a:visit{color:yellow;}
+		a:hover{color:blue;}
+		a:active{color: pink;}
+		p:before{content:"hello,"}
+		p:after{content: "可以做个朋友吗？"}
+		[type="text"]:focus{outline-color:red;}
+		[type="text"]:checked{color:blue;}
+	</style>
+</head>
+<body>
+	<a href="#">kuazu.com</a>
+	<a href="#">kuazucom</a>
+	<a href="#">kuazu&com</a>
+	<a href="#">kuazu#com</a>
+	<a href="#">kuazu*com</a>
+	<a href="#">kuazu@com</a>
+	<p>美女</p>
+	<input type="text">
+</body>
+</html>

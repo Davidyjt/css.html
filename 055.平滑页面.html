@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/all.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		
+		.page>input,.page>a{
+			width: 20%;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 25px;
+			position: fixed;
+			color: white;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			
+			
+
+			
+		}
+		.page>a{
+			background: #2f2f2f;
+			text-decoration:none;
+			
+
+
+		}
+		.page>input{
+			z-index: 9999;
+			opacity: 0;
+			cursor:pointer;
+			background-color:  #2f2f2f;
+
+		}
+
+		.page>input:checked + a{
+			color: orange;
+		}
+		.page>input:hover + a{
+			background-color: black;
+			
+			
+		}
+		#na1,#na1 + a{
+			left: 0;
+		}
+	    #na2,#na2 + a{
+			left: 20%;
+		}
+		 #na3,#na3 + a{
+			left: 40%;
+		}
+		 #na4,#na4 + a{
+			left: 60%;
+		} 
+		#na5,#na5 + a{
+			left: 80%;
+		}
+		i{
+			margin-right: 5px;
+		}
+		html{
+			height: 100%;
+		}
+		body{
+			height: 100%;
+		}
+		.page{
+			height: 100%;
+		}
+		.contain{
+			height: 100%;
+		}
+		.son1{
+			height: 100%;
+			width: 100%;
+			background-image: url(../test/f1.jpg);
+			background-repeat: no-repeat;
+			 background-size: cover;
+
+		}
+		.son2{
+			height: 100%;
+			width: 100%;
+		   background-image: url(../test/f2.jpg);
+		   background-size: cover;
+		}
+		.son3{
+			height: 100%;
+			width: 100%;
+			background-image: url(../test/f1.jpg);
+			 background-size: cover;
+		}
+		.son4{
+			height: 100%;
+			width: 100%;
+			background-image: url(../test/f3.jpg);
+			 background-size: cover;
+		}
+		.son5{
+			height: 100%;
+			width: 100%;
+			background-image: url(../test/5.jpg);
+			 background-size: cover;
+		}
+		#na1:checked  ~ .contain{
+			transform:translateY(0%);
+		}
+		#na2:checked ~ .contain{
+			transform:translateY(-100%);
+		}
+		#na3:checked ~ .contain{
+			transform:translateY(-200%);
+		}
+		#na4:checked ~ .contain{
+			transform:translateY(-300%);
+		}
+		#na5:checked ~ .contain{
+			transform:translateY(-400%);
+		}
+		.contain{
+			transition:all 100ms linear;
+
+		}
+		#na1:checked ~ .contain>.son1{
+			animation: yjt 2s linear;
+
+
+		}
+		#na2:checked ~ .contain>.son2{
+			animation: yjt 2s linear;
+
+
+		}#na3:checked ~ .contain>.son3{
+			animation: yjt 2s linear;
+
+
+		}#na4:checked ~ .contain>.son4{
+			animation: yjt 2s linear;
+
+
+		}#na5:checked ~ .contain>.son5{
+			animation: yjt 2s linear;
+
+
+		}
+
+		@keyframes yjt{
+			from{opacity: 0;
+
+			}
+			to{opacity: 1;
+
+			}
+		}
+
+
+
+
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="page">
+		
+		<input type="radio" name="na"id="na1" checked>
+		<a href=""><i class="fas fa-home"></i>home</a>
+		
+		<input type="radio" name="na"id="na2">
+		<a href=""><i class="fas fa-coffee"></i>serice</a>
+		
+		
+		<input type="radio" name="na"id="na3">
+		<a href=""><i class="fas fa-building"></i>about</a>
+		
+		<input type="radio" name="na"id="na4">
+		<a href=""><i class="fas fa-user-friends"></i>team</a>
+		
+		
+		<input type="radio" name="na"id="na5">
+		<a href=""><i class="fas fa-phone"></i>contect</a>
+		<div class="contain">
+			
+			<div class="son1">1</div>
+			<div class="son2">2</div>
+			<div class="son3">3</div>
+			<div class="son4">4</div>
+			<div class="son5">5</div>
+		</div>
+		
+	</div>
+	
+		
+	 
+	
+</body>
+</html>

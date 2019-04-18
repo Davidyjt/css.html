@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.contain{
+			width: 960px;
+			height: 50px;
+			background-color: gray; 
+			/*margin: 30px auto;*/
+			position: fixed;
+			top: 20px;
+			left: 50%;
+			margin-left: -480px;
+			z-index: 5;
+
+		}
+
+		
+		header li{
+			list-style: none;
+			float: left;
+			width: 20%;
+			line-height: 50px;
+			text-align: center;
+			position: relative;
+			cursor: pointer;
+
+
+		}
+		a{
+			text-decoration: none;
+		}
+		.contain li:nth-child(3){
+			background-color: red;
+		}
+		.tmall{
+			position: absolute;
+			left:50%;
+			margin-left: -20px;
+			top: -19px;
+			
+		}
+
+		section{
+			height: 500px;
+			width: 800px;
+			margin-top: 150px;
+			background-image: url(../test/ad1.jpg);
+			background-repeat: no-repeat;
+			margin-left: 530px;
+			position: relative;
+			
+
+			
+		}
+		.spa{
+		   width: 80px;
+		   height: 80px;
+		   background-color: gray;
+		   color: white;
+		   position: absolute;
+		   top: 50%;
+		   margin-top: -40px;
+		   line-height: 80px;
+		   font-size: 40px;
+		   text-align: center;
+		   display: none;
+		   cursor: pointer;
+		}
+		section:hover .spa{
+			display: block;
+		}
+	
+	
+		.left{
+
+			
+		}
+		.right{position: absolute;
+			right: 0px;
+			
+		}
+		.lbz{
+			position: absolute;
+			bottom: 80px;
+			right: 20px;
+			cursor: pointer;
+		}
+		.lb{
+			float: right;
+			/*margin-top: 400px;*/
+			width: 10px;
+			height: 10px;
+			border: 10px solid gray;
+			border-radius: 50%;
+			background-color: gray;
+			list-style: none;
+			line-height: 10px;
+			margin-left: 5px;
+			
+		}
+		
+		.sl{
+			width: 100px;
+			height: 200px;
+			background-color: red;
+			position: fixed;
+			top: 50%;
+			margin-top:-200px;
+			left: 0px;
+		}
+		.sr{
+			width: 100px;
+			height: 200px;
+			background-color: red;
+			position: fixed;
+			top: 50%;
+			margin-top:-200px;
+			right: 0px;
+	
+		}
+		.sf{
+			width: 100px;
+		    height: 100px;
+		    background-color: gray;
+		    position: fixed;
+		    right: 0px;
+		    bottom: 0px;
+		    line-height: 100px;
+		    text-align: center;
+
+		}
+		footer{
+			width: 800px;
+			height: 900px;
+			background-color: blue;
+			margin-top: 200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="contain">
+			<ul>
+				<li>天猫会员</li>
+				<li>品牌街</li>
+				<li>电器城 <img src="../test/tmall.png" alt=""class="tmall"></li>
+				<li>营业厅</li>
+				<li>魅力惠</li>
+			</ul>
+		</div>
+		
+	</header>
+	<section>
+		<div class="img">
+			<ul class="lbz">
+				<li class="lb">5</li>
+				<li class="lb">4</li>
+				<li class="lb">3</li>
+				<li class="lb">2</li>
+				<li class="lb">1</li>
+			</ul>
+			<span class=" spa left">&lt;</span>
+			<span class=" spa right">&gt;</span>
+
+		</div>
+		<div class="sl"></div>
+		<div class="sr"></div>
+		<div class="sf"><a href="">返回顶部</a></div>
+		
+	</section>
+	<footer>我是内容</footer>
+	
+</body>
+</html>

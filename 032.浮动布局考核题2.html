@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>032.浮动布局考核题2.html</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.father{
+			height: 100px;
+			background-color: red;
+			line-height: 100px;
+		}
+		.son2{
+			float: right;
+			padding: 10px;
+
+
+		}
+		.son1{
+			float: left;
+			padding: 10px;
+		}
+		.father1{
+			height: 100px;
+			background-color: blue;
+			border: 0px solid red;
+
+		}
+		img{
+			float: right;
+			width: 100px;
+			height: 100px;
+			margin:0px 150px;
+			overflow: hidden;
+			border: 0px solid red;
+			
+		}
+		#t2{float: left;
+			width: 100px;
+			height: 100px;
+			margin-left:100px;
+			overflow: hidden;
+		}
+		#bg{
+			/*margin-top: 40px;
+			margin-left: 300px;*/
+			margin:40px auto;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son2">第九</div>
+		<div class="son2">第八</div>
+		<div class="son2">第七</div>
+		<div class="son2">第六</div>
+		<div class="son1">第一</div>
+		<div class="son1">第二</div>
+		<div class="son1">第三</div>
+		<div class="son1">第四</div>
+		<div class="son1">第五</div>
+		
+	</div>
+	<div class="father1">
+		<img src="../test/5.jpg" alt="">
+		<img src="../test/精灵图.jpg" alt="" id="t2">
+         <div class="bg">
+			<input type="text" id="bg"> 
+
+			<input type="button" value="搜索"  >
+		</div>
+		</div>
+		
+	</div>
+</body>	
+	
+</html>

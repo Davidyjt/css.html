@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>倒三角和margin重叠.html</title>
+	<style>
+		/*div{
+			width:0px;
+			height: 0px;
+			border-top: 50px solid black;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-bottom: 50px solid transparent;
+
+		}*/
+		.son1{
+		 width: 200px;
+		 height: 200px;
+		 background: red;
+		 margin-bottom: 100px;
+		 }
+		 .son2{
+		 width: 200px;
+		 height: 200px;
+		 background: blue;
+		 margin-top: 100px;
+		 margin-bottom: 100px;
+
+		 }
+		 .son3{
+		 width: 200px;
+		 height: 200px;
+		 background: green;
+		 margin-top: 200px;
+		 }
+		 .father{
+		 	overflow: hidden ;
+
+		 }
+	</style>
+</head>
+<body>
+	
+	<div class="son1">我是段落1</div>
+	<div class="father">
+	<div class="son2">我是段落2</div>
+	</div>
+	<div class="son3">我是段落3</div>
+	
+</body>
+</html>

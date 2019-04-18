@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>004.序选择器.html</title>
+	<style>
+		/*这是同级别不区分类型*/
+		/*p:first-child{color: red;}
+		p:nth-child(2){color: red;}
+		p:nth-child(even){font-size: 100px;}
+		p:nth-child(odd){font-weight: italic;}
+		p:last-child{color:blue;}
+		p:nth-last-child(2){color:yellow;}
+		h1:only-child{font-size:300px;}
+*/
+		/*这是同级别区分类型*/
+		p:first-of-type{font-size: 100px;}
+		p:last-of-type{font-size: 200px;}
+		p:nth-of-type(2){color: red;}
+		p:nth-last-of-type(2){color:gray;}
+		h1:only-of-type{color:blue;}
+
+	</style>
+</head>
+<body>
+<div>
+	<span>我是段落1</span>
+	<p>	我是段落2</p>
+	<p>我是段落3</p>
+	<p>我是段落4</p>
+	<p>我是段落5</p>
+	<p>我是段落6</p>
+</div>	
+<div>
+	<h1>我是标题1</h1>
+</div>
+	
+</body>
+</html>

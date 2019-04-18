@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		ul{
+			width: 400px;
+			height: 200px;
+			border: 1px solid gray;
+			margin: 100px auto;
+			
+			position: relative;
+			transform: rotateX(0deg)rotateY(0deg);
+		    transform-style: preserve-3d;
+
+		}
+		li{
+			width: 400px;
+			height: 200px;
+			line-height: 200px;
+			text-align: center;
+			list-style: none;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+
+		}
+		li:nth-child(1){
+			background-color: red;
+			transform:rotateX(90deg) translateZ(100px)  ;
+
+
+
+		}
+		li:nth-child(2){
+			background-color: blue;
+			transform:rotateX(180deg) translateZ(100px)  ;
+
+			
+
+		}
+		li:nth-child(3){
+			background-color: yellow;
+			transform:rotateX(270deg) translateZ(100px)  ;
+
+			
+
+		}
+		li:nth-child(4){
+			background-color: green;
+			transform:rotateX(360deg) translateZ(100px)  ;
+
+			}
+		
+		li:nth-child(5){
+			width: 200px;
+			background-color: gray;
+			
+			transform:  rotateY(90deg) translateZ(200px) ;
+			left: 50%;
+			margin-left: -100px;
+
+			
+
+		}
+		li:nth-child(6){
+			width: 200px;
+			background-color: skyblue;
+			transform:rotateY(270deg) translateZ(200px) ;
+			left: 50%;
+			margin-left: -100px;
+			
+
+			
+
+		}
+		
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</ul>
+	
+</body>
+</html>

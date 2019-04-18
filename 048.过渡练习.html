@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father{
+			width: 600px;
+			height:600px;
+			border: 1px solid gray;
+		     box-sizing:border-box;
+		}
+		.son{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			/*transition-property: width;
+			transition-duration: 3s;
+			transition-timing-function: ease-out;*/
+			transition: width 3s ease-out;
+			margin-top: 10px;
+		}
+		.father:hover .son{
+			width: 600px;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+		<div class="son"></div>
+		<div class="son"></div>
+		<div class="son"></div>
+		<div class="son"></div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>005.属性选择器.html</title>
+	<style>
+		/*以什么开始*/
+		/*[title |="kuazu"]{color: red;}
+		[title^="kuazu"]{color:red;}*/
+		/*以什么结束*/
+		/*[title $=com]{color: blue;}*/
+		/*属性值包括什么*/
+		/*[title~=zu]{color: red;}
+		[title*=zu]{color:blue;}*/
+		/*通用样式*/
+		/**{color:black;}
+*/
+		p:before{content: "hello,"}
+		p:after{content: "可以做个朋友吗？"}
+		a:link
+		{color: blue;
+		}
+	</style>
+</head>
+<body>
+	<a href="#" title="kuazu.com">kuazu.com</a>
+	<a href="#" title="kuazucom">kuazucom</a>
+	<a href="#" title="kuazu-com">kuazu-com</a>
+	<a href="#" title="kuazu com">kuazu com</a>
+	<a href="#" title="kuazu&com">kuazu&com</a>
+	<a href="#" title="kuazu#com">kuazu#com</a>
+	<p>美女</p>
+	
+</body>
+</html>

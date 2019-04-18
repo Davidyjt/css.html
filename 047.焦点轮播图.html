@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	047</title>
+	<style>	
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.father{
+			width: 800px;
+			height: 600px;
+			border: 10px solid gray;
+			border-size:box-border;
+			overflow: hidden;
+			margin: 50px auto;
+			border-radius: 10px;
+		}
+		ul{
+			width: 4200px;
+			height: 600px;
+			display: inline-block;
+			animation:sport 12s linear infinite;
+
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		@keyframes sport{
+			from{
+				margin-left:0px;
+			}
+			to{
+				margin-left: -2700px;
+			}
+		}
+		li{
+			float: left;
+			list-style: none;
+		}
+	   ul:hover{
+			animation-play-state: paused;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="father">	
+		<ul class="son">	
+			<li><img src="	../test/f1.jpg" alt="">	</li>
+			<li><img src="	../test/f2.jpg" alt="">	</li>
+			<li><img src="	../test/f3.jpg" alt="">	</li>
+			<li><img src="	../test/f4.jpg" alt="">	</li>
+			<li><img src="	../test/f1.jpg" alt="">	</li>
+			<li><img src="	../test/f1.jpg" alt="">	</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

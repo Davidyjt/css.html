@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			001表单.html
+		</title>
+		<style type="text/css">
+			textarea{ 
+				resize: none;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="http://www.kuazhu.com" method="get">
+			<p>
+				<label for="name">
+				用户名：
+			</label>
+			<input type="text" name="usename" placeholder="昵称" id="name"/>
+		</p>
+
+
+
+
+		<p>
+			<label for="password">
+				密码：
+			</label>
+			<input type="password" name="password" placeholder="***" id="password"/>
+		</p>
+
+
+
+		<p>
+			<label for="email">
+				邮箱：
+			</label>
+			<input type="email" name="email" placeholder="2248568234@qq.com" id="email">
+		</p>
+
+
+
+		<p>
+			性别:男<input type="radio" name="male" value="male" checked>
+			女<input type="radio" name="male" value="woman">
+			保密<input type="radio" name="male" value="on">
+		</p>
+
+
+
+		<p>
+			爱好：篮球<input type="checkbox" name="hobby" value="football" checked>
+			棒球<input type="checkbox" name="hobby" value="bq">
+			足球<input type="checkbox" name="hobby" value="football">
+			排球<input type="checkbox" name="hobby" value="pq" checked>
+		</p>
+
+
+
+		<p>
+			<label for="year">
+			年龄：<input type="number" placeholder="20" id="year"/>
+			</label>
+		</p>
+
+
+
+		<p>
+			<label for="date">
+				出生日期：<input type="date" name="date" id="date">
+			</label>
+		</p>
+
+
+
+		<p>
+			<label for="zhuye">
+				个人主页：
+			</label>
+			<input type="text" name="http"  placeholder="www.yuanjintao.com" id="zhuye"/>
+		</p>
+
+
+
+		<p>
+			地址：<select name="city">
+				<optgroup label="直辖市">
+					<option value="bj">北京</option>
+					<option value="sh">上海</option>
+					<option value="tj">天津</option>
+					<option value="hn">重庆</option>
+					
+				</optgroup>
+				<optgroup label="省份">
+				<option value="1">河北</option>
+				<option value="3" selected="selected">河南</option>
+				<option value="2">湖北</option>
+				<option value="4">湖南</option>
+				<option value="5">广东</option>
+				<option value="6">广西</option>
+				<option value="7">江西</option>
+				<option value="8">山西</option>
+				<option value="9">陕西</option>
+				<option value="10">甘肃</option>
+				<option value="11">四川</option>
+				<option value="12">江苏</option>
+				<option value="13">山东</option>
+				<option value="14">黑龙江</option>
+			</optgroup>
+		</select>
+
+			<select name="cit">
+				<optgroup label="市级">
+					<option value="1" selected="selected">焦作</option>
+					<option value="2">郑州</option>
+					<option value="3">信阳</option>
+					<option value="4">许昌</option>
+					<option value="5">漯河</option>
+					<option value="6">安阳</option>
+					<option value="7">新乡</option>
+				</optgroup>
+			</select>
+
+			<select name="qy" >
+				<optgroup label="区级">
+					<option value="1" selected="selected">中站区</option>
+					<option value="2">解放区</option>
+					<option value="3">山阳区</option>
+					<option value="4">马村区</option>
+					<option value="5">新区</option>
+					<option value="6">武陟县</option>
+					<option value="7">修武县</option>
+					<option value="8">博爱县</option>
+					<option value="9">温县</option>
+					<option value="0">沁阳市</option>
+					<option value="11">孟州市</option>
+				</optgroup>
+			</select>
+		</p>
+
+
+
+		<p>
+		喜欢的颜色：<input type="color">
+		</p>
+
+
+
+		<p>
+			自我介绍：<textarea name="1" id="2" cols="30" rows="10"></textarea>
+		</p>
+
+
+
+		<p>
+			<input type="image" src="./tu/timg.jpg" width="200px" >
+		</p>
+
+
+
+		<p>
+			<input type="button">
+			<input type="reset" value="重置">
+			 <input type="submit"  value="提交">
+		</p>
+
+		</form>
+	</body>
+</html>
